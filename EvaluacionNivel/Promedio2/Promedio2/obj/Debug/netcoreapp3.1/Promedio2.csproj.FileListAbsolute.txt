@@ -1,0 +1,13 @@
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.exe
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.deps.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\bin\Debug\netcoreapp3.1\Promedio2.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.csprojAssemblyReference.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\Promedio2\Promedio2\obj\Debug\netcoreapp3.1\Promedio2.genruntimeconfig.cache

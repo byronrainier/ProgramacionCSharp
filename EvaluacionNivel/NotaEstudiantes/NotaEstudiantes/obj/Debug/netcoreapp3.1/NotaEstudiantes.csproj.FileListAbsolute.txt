@@ -1,0 +1,12 @@
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.exe
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.deps.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\bin\Debug\netcoreapp3.1\NotaEstudiantes.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\NotaEstudiantes\NotaEstudiantes\obj\Debug\netcoreapp3.1\NotaEstudiantes.genruntimeconfig.cache

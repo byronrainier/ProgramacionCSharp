@@ -1,0 +1,13 @@
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.exe
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.deps.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\bin\Debug\netcoreapp3.1\ContadorDig.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.csprojAssemblyReference.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\ContadorDig\ContadorDig\obj\Debug\netcoreapp3.1\ContadorDig.genruntimeconfig.cache

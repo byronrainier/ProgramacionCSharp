@@ -1,0 +1,13 @@
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.exe
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.deps.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\bin\Debug\netcoreapp3.1\CalcMultiplos.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.csprojAssemblyReference.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcMultiplos\CalcMultiplos\obj\Debug\netcoreapp3.1\CalcMultiplos.genruntimeconfig.cache

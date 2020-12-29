@@ -1,0 +1,13 @@
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.exe
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.deps.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\bin\Debug\netcoreapp3.1\CalcPeso.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.csprojAssemblyReference.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.dll
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.pdb
+C:\Users\byhenriquez\Documents\C#\EvaluacionNivel\CalcPeso\CalcPeso\obj\Debug\netcoreapp3.1\CalcPeso.genruntimeconfig.cache
