@@ -1,0 +1,13 @@
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.exe
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.deps.json
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.runtimeconfig.json
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.runtimeconfig.dev.json
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.dll
+C:\Users\byhenriquez\Documents\C#\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.pdb
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.csprojAssemblyReference.cache
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.AssemblyInfoInputs.cache
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.AssemblyInfo.cs
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.csproj.CoreCompileInputs.cache
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.dll
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.pdb
+C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.genruntimeconfig.cache
