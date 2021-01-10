@@ -57,7 +57,7 @@ namespace TareaClases
             Console.WriteLine($"El lado B mide: {cuadrado.LadoB}");
             Console.WriteLine($"El lado C mide: {cuadrado.LadoC}");
             Console.WriteLine($"El lado D mide: {cuadrado.LadoD}");
-            Console.WriteLine("El perimetro del Triangulo dado sus lados es: " + cuadrado.CalculoSuperficie(cuadrado.LadoA, cuadrado.LadoB, cuadrado.LadoC, cuadrado.LadoD));
+            Console.WriteLine("La superficie  del Triangulo dado sus lados es: " + cuadrado.CalculoSuperficie(cuadrado.LadoA, cuadrado.LadoB, cuadrado.LadoC, cuadrado.LadoD));
             Console.WriteLine("El perimetro del Triangulo dado sus lados es: " +  cuadrado.CalculoPerimetro(cuadrado.LadoA, cuadrado.LadoB, cuadrado.LadoC, cuadrado.LadoD));
 
             Console.WriteLine("---------------------------------");
