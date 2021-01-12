@@ -11,3 +11,16 @@ C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClase
 C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.dll
 C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.pdb
 C:\Users\byhenriquez\Documents\C#\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.genruntimeconfig.cache
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.exe
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.deps.json
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.runtimeconfig.json
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.runtimeconfig.dev.json
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.dll
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\bin\Debug\netcoreapp3.1\TareaClases.pdb
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.csprojAssemblyReference.cache
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.AssemblyInfoInputs.cache
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.AssemblyInfo.cs
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.csproj.CoreCompileInputs.cache
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.dll
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.pdb
+C:\Users\Zito\Source\Repos\byronrainier\ProgramacionCSharp\TareaClases\obj\Debug\netcoreapp3.1\TareaClases.genruntimeconfig.cache
