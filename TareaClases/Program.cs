@@ -126,6 +126,9 @@ namespace TareaClases
 
             operarios.ImprimirSueldos();
 
+
+            Alumno  alumno1 = new Alumno();
+
             Console.ReadLine();
         }
     }

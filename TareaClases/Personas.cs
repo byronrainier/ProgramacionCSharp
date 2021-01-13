@@ -4,7 +4,8 @@ namespace TareaClases
 {
     public class Personas
     {
-        //
+        
+        
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public int Edad { get; set; }

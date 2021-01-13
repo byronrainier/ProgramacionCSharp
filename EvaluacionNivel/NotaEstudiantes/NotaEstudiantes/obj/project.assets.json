@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\byhenriquez\\.nuget\\packages\\": {}
+    "C:\\Users\\Zito\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\byhenriquez\\Documents\\C#\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\NotaEstudiantes.csproj",
+      "projectUniqueName": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\NotaEstudiantes.csproj",
       "projectName": "NotaEstudiantes",
-      "projectPath": "C:\\Users\\byhenriquez\\Documents\\C#\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\NotaEstudiantes.csproj",
-      "packagesPath": "C:\\Users\\byhenriquez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\byhenriquez\\Documents\\C#\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\obj\\",
+      "projectPath": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\NotaEstudiantes.csproj",
+      "packagesPath": "C:\\Users\\Zito\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\EvaluacionNivel\\NotaEstudiantes\\NotaEstudiantes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\byhenriquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zito\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
