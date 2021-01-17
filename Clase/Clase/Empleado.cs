@@ -6,12 +6,6 @@ namespace Clase
     public class Empleado : Persona
     {
         public decimal Sueldo { get; set; }
-
-        public override void AgregarPersona(Persona persona, out int personaId)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void ImprimirDatos()
         {
             Console.WriteLine("----Datos del Empleado----");
@@ -23,7 +17,10 @@ namespace Clase
             Console.WriteLine("----------------------------");
         }
 
-
+        public override void AgregarPersona(Persona persona, out int personaId)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

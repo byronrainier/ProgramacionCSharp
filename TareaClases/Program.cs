@@ -115,7 +115,7 @@ namespace TareaClases
 
             alumno.Nombres = "Jean Alain";
             alumno.Apellidos = " Rodriguez";
-            alumno.Edad = 23;
+            alumno.Edad = "Juan";
 
             Console.WriteLine($"Nombre completo del estudiante: {alumno.ObtenerDatos()}");
             alumno.ValidarEdad();

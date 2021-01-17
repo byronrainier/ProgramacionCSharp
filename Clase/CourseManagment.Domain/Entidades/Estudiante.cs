@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿ using System.Collections.Generic;
 using System;
 
 namespace CourseManagment.Domain.Entidades
@@ -34,6 +34,10 @@ namespace CourseManagment.Domain.Entidades
         public List<Estudiante> ObtenerEstudiantes(string departamento)
         {
             return this.estudiantes.FindAll(est => est.Departamento == departamento);
+        }
+        public List<Estudiante> ObtenerEstudiantes()
+        {
+            return this.estudiantes;
         }
     }
 }

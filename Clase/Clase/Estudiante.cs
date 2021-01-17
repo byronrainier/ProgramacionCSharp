@@ -62,12 +62,9 @@ namespace Clase
         {
             return new Estudiante();
         }
-
         public override void AgregarPersona(Persona persona, out int personaId)
         {
-            //Insert Data
-
-            personaId = 1;
+            throw new NotImplementedException();    
         }
     }
 }

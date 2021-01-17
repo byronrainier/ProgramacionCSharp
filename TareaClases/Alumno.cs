@@ -13,6 +13,9 @@ namespace TareaClases
 
         public string Recinto { get; set; }
 
+
+
+
         public Alumno (){}
 
 
@@ -27,5 +30,10 @@ namespace TareaClases
         {
             return new Alumno();
         }
+
+
+
+
     }
 }
+ 

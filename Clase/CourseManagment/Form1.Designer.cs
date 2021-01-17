@@ -1,7 +1,7 @@
 ﻿
 namespace CourseManagment
 {
-    partial class Form1
+    partial class formEstudiante
     {
         /// <summary>
         /// Required designer variable.
@@ -30,21 +30,21 @@ namespace CourseManagment
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtRut = new System.Windows.Forms.Label();
+            this.txtRut = new System.Windows.Forms.TextBox();
+            this.lblRut = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblApellidos = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNombres = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtCarrera = new System.Windows.Forms.TextBox();
+            this.lblCarrera = new System.Windows.Forms.Label();
+            this.txtDepartamento = new System.Windows.Forms.TextBox();
+            this.lblDepartamento = new System.Windows.Forms.Label();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.lblMatricula = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
@@ -55,14 +55,14 @@ namespace CourseManagment
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.txtRut);
+            this.groupBox1.Controls.Add(this.lblRut);
             this.groupBox1.Controls.Add(this.txtDireccion);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblDireccion);
             this.groupBox1.Controls.Add(this.txtApellidos);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblNombres);
             this.groupBox1.Location = new System.Drawing.Point(28, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(414, 187);
@@ -70,21 +70,21 @@ namespace CourseManagment
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(104, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 20);
-            this.textBox1.TabIndex = 15;
-            // 
             // txtRut
             // 
-            this.txtRut.AutoSize = true;
-            this.txtRut.Location = new System.Drawing.Point(6, 143);
+            this.txtRut.Location = new System.Drawing.Point(104, 140);
             this.txtRut.Name = "txtRut";
-            this.txtRut.Size = new System.Drawing.Size(27, 13);
-            this.txtRut.TabIndex = 14;
-            this.txtRut.Text = "Rut:";
+            this.txtRut.Size = new System.Drawing.Size(215, 20);
+            this.txtRut.TabIndex = 15;
+            // 
+            // lblRut
+            // 
+            this.lblRut.AutoSize = true;
+            this.lblRut.Location = new System.Drawing.Point(6, 143);
+            this.lblRut.Name = "lblRut";
+            this.lblRut.Size = new System.Drawing.Size(27, 13);
+            this.lblRut.TabIndex = 14;
+            this.lblRut.Text = "Rut:";
             // 
             // txtDireccion
             // 
@@ -93,14 +93,14 @@ namespace CourseManagment
             this.txtDireccion.Size = new System.Drawing.Size(215, 20);
             this.txtDireccion.TabIndex = 13;
             // 
-            // label3
+            // lblDireccion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Direccion:";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(6, 109);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(55, 13);
+            this.lblDireccion.TabIndex = 12;
+            this.lblDireccion.Text = "Direccion:";
             // 
             // txtApellidos
             // 
@@ -109,14 +109,14 @@ namespace CourseManagment
             this.txtApellidos.Size = new System.Drawing.Size(215, 20);
             this.txtApellidos.TabIndex = 11;
             // 
-            // label2
+            // lblApellidos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Apellidos:";
+            this.lblApellidos.AutoSize = true;
+            this.lblApellidos.Location = new System.Drawing.Point(6, 76);
+            this.lblApellidos.Name = "lblApellidos";
+            this.lblApellidos.Size = new System.Drawing.Size(52, 13);
+            this.lblApellidos.TabIndex = 10;
+            this.lblApellidos.Text = "Apellidos:";
             // 
             // txtNombres
             // 
@@ -125,23 +125,23 @@ namespace CourseManagment
             this.txtNombres.Size = new System.Drawing.Size(215, 20);
             this.txtNombres.TabIndex = 9;
             // 
-            // label1
+            // lblNombres
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Nombres:";
+            this.lblNombres.AutoSize = true;
+            this.lblNombres.Location = new System.Drawing.Point(6, 43);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(52, 13);
+            this.lblNombres.TabIndex = 8;
+            this.lblNombres.Text = "Nombres:";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.txtCarrera);
+            this.groupBox2.Controls.Add(this.lblCarrera);
+            this.groupBox2.Controls.Add(this.txtDepartamento);
+            this.groupBox2.Controls.Add(this.lblDepartamento);
+            this.groupBox2.Controls.Add(this.txtMatricula);
+            this.groupBox2.Controls.Add(this.lblMatricula);
             this.groupBox2.Location = new System.Drawing.Point(28, 224);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(414, 146);
@@ -149,53 +149,53 @@ namespace CourseManagment
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Estudiantes";
             // 
-            // textBox3
+            // txtCarrera
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtCarrera.Location = new System.Drawing.Point(104, 102);
+            this.txtCarrera.Name = "txtCarrera";
+            this.txtCarrera.Size = new System.Drawing.Size(215, 20);
+            this.txtCarrera.TabIndex = 13;
             // 
-            // label5
+            // lblCarrera
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Carrera:";
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Location = new System.Drawing.Point(6, 109);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(44, 13);
+            this.lblCarrera.TabIndex = 12;
+            this.lblCarrera.Text = "Carrera:";
             // 
-            // textBox4
+            // txtDepartamento
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 73);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 20);
-            this.textBox4.TabIndex = 11;
+            this.txtDepartamento.Location = new System.Drawing.Point(104, 73);
+            this.txtDepartamento.Name = "txtDepartamento";
+            this.txtDepartamento.Size = new System.Drawing.Size(215, 20);
+            this.txtDepartamento.TabIndex = 11;
             // 
-            // label6
+            // lblDepartamento
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Departamento:";
+            this.lblDepartamento.AutoSize = true;
+            this.lblDepartamento.Location = new System.Drawing.Point(6, 76);
+            this.lblDepartamento.Name = "lblDepartamento";
+            this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
+            this.lblDepartamento.TabIndex = 10;
+            this.lblDepartamento.Text = "Departamento:";
             // 
-            // textBox5
+            // txtMatricula
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtMatricula.Location = new System.Drawing.Point(104, 36);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(215, 20);
+            this.txtMatricula.TabIndex = 9;
             // 
-            // label7
+            // lblMatricula
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 43);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Matricula:";
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.Location = new System.Drawing.Point(6, 43);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(53, 13);
+            this.lblMatricula.TabIndex = 8;
+            this.lblMatricula.Text = "Matricula:";
             // 
             // btnGuardar
             // 
@@ -205,6 +205,7 @@ namespace CourseManagment
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -218,23 +219,24 @@ namespace CourseManagment
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(496, 31);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(28, 430);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
-            this.dgvEstudiantes.Size = new System.Drawing.Size(240, 339);
+            this.dgvEstudiantes.Size = new System.Drawing.Size(414, 189);
             this.dgvEstudiantes.TabIndex = 12;
             // 
-            // Form1
+            // formEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(459, 635);
             this.Controls.Add(this.dgvEstudiantes);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "formEstudiante";
             this.Text = "Estudiante";
+            this.Load += new System.EventHandler(this.formEstudiante_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -246,21 +248,21 @@ namespace CourseManagment
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label txtRut;
+        private System.Windows.Forms.TextBox txtRut;
+        private System.Windows.Forms.Label lblRut;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtApellidos;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCarrera;
+        private System.Windows.Forms.Label lblCarrera;
+        private System.Windows.Forms.TextBox txtDepartamento;
+        private System.Windows.Forms.Label lblDepartamento;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.Label lblMatricula;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView dgvEstudiantes;

@@ -8,11 +8,6 @@ namespace Clase
     {
         public string Cuenta { get; set; }
 
-        public override void AgregarPersona(Persona persona, out int personaId)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void ImprimirDatos()
         {
             Console.WriteLine("----Datos del Cliente----");
@@ -24,6 +19,10 @@ namespace Clase
             Console.WriteLine("----------------------------");
         }
 
+        public override void AgregarPersona(Persona persona, out int personaId)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

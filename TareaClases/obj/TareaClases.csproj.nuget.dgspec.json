@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zito\\Source\\Repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj": {}
+    "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zito\\Source\\Repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj": {
+    "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zito\\Source\\Repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj",
+        "projectUniqueName": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj",
         "projectName": "TareaClases",
-        "projectPath": "C:\\Users\\Zito\\Source\\Repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj",
+        "projectPath": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\TareaClases.csproj",
         "packagesPath": "C:\\Users\\Zito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zito\\Source\\Repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\obj\\",
+        "outputPath": "C:\\Users\\Zito\\source\\repos\\byronrainier\\ProgramacionCSharp\\TareaClases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CourseManagment
+namespace Formulario_Cliente
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace CourseManagment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formEstudiante());
+            Application.Run(new Form1());
         }
     }
 }
