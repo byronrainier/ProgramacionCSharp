@@ -5,6 +5,7 @@ namespace CourseManagment.Domain.Entidades
 {
     public class Estudiante : Persona
     {
+        #region "Propiedades"
 
         private List<Estudiante> estudiantes;
 
@@ -16,6 +17,10 @@ namespace CourseManagment.Domain.Entidades
         public string Carrera { get; set; }
         public string Matricula { get; set; }
         public string Departamento { get; set; }
+
+        #endregion
+
+        #region "Metodos"
 
         public void AgregarEstudiante(Estudiante estudiante) 
         {
@@ -39,5 +44,7 @@ namespace CourseManagment.Domain.Entidades
         {
             return this.estudiantes;
         }
+
+        #endregion
     }
 }

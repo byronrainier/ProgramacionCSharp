@@ -29,6 +29,9 @@ namespace Formularios
             newProfesor.materiaImparte = txtMateria.Text;
             newProfesor.Departamento = txtDepartamento.Text;
             newProfesor.Carrera = txtCarrera.Text;
+            newProfesor.Codigo = txtCodigo.Text;
+
+            profesorBL.AgregarProfesor(newProfesor);
 
             dgvProfesores.DataSource = profesorBL.ObtenerProfesores().ToArray();
             dgvProfesores.Refresh();

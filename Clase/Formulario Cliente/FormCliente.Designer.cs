@@ -1,7 +1,7 @@
 ﻿
-namespace Formularios
+namespace Formulario_Cliente
 {
-    partial class FormProfesor
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,15 @@ namespace Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvProfesores = new System.Windows.Forms.DataGridView();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtCarrera = new System.Windows.Forms.TextBox();
-            this.lblCarrera = new System.Windows.Forms.Label();
-            this.txtDepartamento = new System.Windows.Forms.TextBox();
-            this.lblDepartamento = new System.Windows.Forms.Label();
-            this.txtMateria = new System.Windows.Forms.TextBox();
-            this.lblMateria = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.lblEntidad = new System.Windows.Forms.Label();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
+            this.lblCuenta = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtRut = new System.Windows.Forms.TextBox();
             this.lblRut = new System.Windows.Forms.Label();
@@ -48,104 +47,98 @@ namespace Formularios
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblNombres = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).BeginInit();
+            this.txtEntidad = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.seleccionFecha = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvProfesores
+            // dgvClientes
             // 
-            this.dgvProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProfesores.Location = new System.Drawing.Point(12, 434);
-            this.dgvProfesores.Name = "dgvProfesores";
-            this.dgvProfesores.Size = new System.Drawing.Size(414, 153);
-            this.dgvProfesores.TabIndex = 17;
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Location = new System.Drawing.Point(12, 473);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.Size = new System.Drawing.Size(414, 153);
+            this.dgvClientes.TabIndex = 22;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(256, 389);
+            this.btnCancelar.Location = new System.Drawing.Point(256, 420);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(116, 389);
+            this.btnGuardar.Location = new System.Drawing.Point(116, 420);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.TabIndex = 20;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtCodigo);
-            this.groupBox2.Controls.Add(this.lblCodigo);
-            this.groupBox2.Controls.Add(this.txtCarrera);
-            this.groupBox2.Controls.Add(this.lblCarrera);
-            this.groupBox2.Controls.Add(this.txtDepartamento);
-            this.groupBox2.Controls.Add(this.lblDepartamento);
-            this.groupBox2.Controls.Add(this.txtMateria);
-            this.groupBox2.Controls.Add(this.lblMateria);
-            this.groupBox2.Location = new System.Drawing.Point(12, 207);
+            this.groupBox2.Controls.Add(this.seleccionFecha);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtEntidad);
+            this.groupBox2.Controls.Add(this.txtCliente);
+            this.groupBox2.Controls.Add(this.lblCliente);
+            this.groupBox2.Controls.Add(this.lblEntidad);
+            this.groupBox2.Controls.Add(this.txtCuenta);
+            this.groupBox2.Controls.Add(this.lblCuenta);
+            this.groupBox2.Location = new System.Drawing.Point(12, 220);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(414, 167);
-            this.groupBox2.TabIndex = 14;
+            this.groupBox2.Size = new System.Drawing.Size(414, 173);
+            this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Profesores";
+            this.groupBox2.Text = "Datos Clientes";
             // 
-            // txtCarrera
+            // txtCliente
             // 
-            this.txtCarrera.Location = new System.Drawing.Point(104, 133);
-            this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(215, 20);
-            this.txtCarrera.TabIndex = 13;
+            this.txtCliente.Location = new System.Drawing.Point(104, 62);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(215, 20);
+            this.txtCliente.TabIndex = 17;
             // 
-            // lblCarrera
+            // lblCliente
             // 
-            this.lblCarrera.AutoSize = true;
-            this.lblCarrera.Location = new System.Drawing.Point(6, 140);
-            this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(44, 13);
-            this.lblCarrera.TabIndex = 12;
-            this.lblCarrera.Text = "Carrera:";
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(6, 69);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(78, 13);
+            this.lblCliente.TabIndex = 16;
+            this.lblCliente.Text = "Codigo Cliente:";
             // 
-            // txtDepartamento
+            // lblEntidad
             // 
-            this.txtDepartamento.Location = new System.Drawing.Point(104, 104);
-            this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(215, 20);
-            this.txtDepartamento.TabIndex = 11;
+            this.lblEntidad.AutoSize = true;
+            this.lblEntidad.Location = new System.Drawing.Point(6, 35);
+            this.lblEntidad.Name = "lblEntidad";
+            this.lblEntidad.Size = new System.Drawing.Size(94, 13);
+            this.lblEntidad.TabIndex = 14;
+            this.lblEntidad.Text = "Entidad Bancaria: ";
             // 
-            // lblDepartamento
+            // txtCuenta
             // 
-            this.lblDepartamento.AutoSize = true;
-            this.lblDepartamento.Location = new System.Drawing.Point(6, 107);
-            this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
-            this.lblDepartamento.TabIndex = 10;
-            this.lblDepartamento.Text = "Departamento:";
+            this.txtCuenta.Location = new System.Drawing.Point(104, 98);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(215, 20);
+            this.txtCuenta.TabIndex = 9;
             // 
-            // txtMateria
+            // lblCuenta
             // 
-            this.txtMateria.Location = new System.Drawing.Point(104, 67);
-            this.txtMateria.Name = "txtMateria";
-            this.txtMateria.Size = new System.Drawing.Size(215, 20);
-            this.txtMateria.TabIndex = 9;
-            // 
-            // lblMateria
-            // 
-            this.lblMateria.AutoSize = true;
-            this.lblMateria.Location = new System.Drawing.Point(6, 74);
-            this.lblMateria.Name = "lblMateria";
-            this.lblMateria.Size = new System.Drawing.Size(45, 13);
-            this.lblMateria.TabIndex = 8;
-            this.lblMateria.Text = "Materia:";
+            this.lblCuenta.AutoSize = true;
+            this.lblCuenta.Location = new System.Drawing.Point(6, 105);
+            this.lblCuenta.Name = "lblCuenta";
+            this.lblCuenta.Size = new System.Drawing.Size(69, 13);
+            this.lblCuenta.TabIndex = 8;
+            this.lblCuenta.Text = "# de Cuenta:";
             // 
             // groupBox1
             // 
@@ -157,10 +150,10 @@ namespace Formularios
             this.groupBox1.Controls.Add(this.lblApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
             this.groupBox1.Controls.Add(this.lblNombres);
-            this.groupBox1.Location = new System.Drawing.Point(12, 14);
+            this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(414, 187);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
             // 
@@ -228,36 +221,50 @@ namespace Formularios
             this.lblNombres.TabIndex = 8;
             this.lblNombres.Text = "Nombres:";
             // 
-            // txtCodigo
+            // txtEntidad
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(104, 28);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(215, 20);
-            this.txtCodigo.TabIndex = 15;
+            this.txtEntidad.FormattingEnabled = true;
+            this.txtEntidad.Items.AddRange(new object[] {
+            "Banco Popular",
+            "Banco BHD Leon",
+            "Banco APAP",
+            "Banco del Reservas",
+            "Banco Scotiabank"});
+            this.txtEntidad.Location = new System.Drawing.Point(106, 27);
+            this.txtEntidad.Name = "txtEntidad";
+            this.txtEntidad.Size = new System.Drawing.Size(212, 21);
+            this.txtEntidad.TabIndex = 18;
             // 
-            // lblCodigo
+            // label1
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(6, 35);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(46, 13);
-            this.lblCodigo.TabIndex = 14;
-            this.lblCodigo.Text = "Codigo: ";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Fecha Creacion:";
             // 
-            // FormProfesor
+            // seleccionFecha
+            // 
+            this.seleccionFecha.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.seleccionFecha.Location = new System.Drawing.Point(104, 136);
+            this.seleccionFecha.Name = "seleccionFecha";
+            this.seleccionFecha.Size = new System.Drawing.Size(214, 20);
+            this.seleccionFecha.TabIndex = 21;
+            // 
+            // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 609);
-            this.Controls.Add(this.dgvProfesores);
+            this.ClientSize = new System.Drawing.Size(463, 657);
+            this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FormProfesor";
-            this.Text = "Profesores";
-            this.Load += new System.EventHandler(this.FormProfesor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).EndInit();
+            this.Name = "FormCliente";
+            this.Text = "Clientes";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -268,16 +275,13 @@ namespace Formularios
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvProfesores;
+        private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtCarrera;
-        private System.Windows.Forms.Label lblCarrera;
-        private System.Windows.Forms.TextBox txtDepartamento;
-        private System.Windows.Forms.Label lblDepartamento;
-        private System.Windows.Forms.TextBox txtMateria;
-        private System.Windows.Forms.Label lblMateria;
+        private System.Windows.Forms.Label lblEntidad;
+        private System.Windows.Forms.TextBox txtCuenta;
+        private System.Windows.Forms.Label lblCuenta;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRut;
         private System.Windows.Forms.Label lblRut;
@@ -287,7 +291,11 @@ namespace Formularios
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label lblNombres;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox txtEntidad;
+        private System.Windows.Forms.DateTimePicker seleccionFecha;
     }
 }
+
