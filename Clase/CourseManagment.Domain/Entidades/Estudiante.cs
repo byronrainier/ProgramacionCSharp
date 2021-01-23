@@ -15,6 +15,7 @@ namespace CourseManagment.Domain.Entidades
         }
 
         public string Carrera { get; set; }
+        
         public string Matricula { get; set; }
         public string Departamento { get; set; }
 
