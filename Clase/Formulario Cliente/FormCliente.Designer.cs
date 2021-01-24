@@ -33,6 +33,9 @@ namespace Formulario_Cliente
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.seleccionFecha = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEntidad = new System.Windows.Forms.ComboBox();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblEntidad = new System.Windows.Forms.Label();
@@ -47,9 +50,8 @@ namespace Formulario_Cliente
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.lblNombres = new System.Windows.Forms.Label();
-            this.txtEntidad = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.seleccionFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,19 +64,21 @@ namespace Formulario_Cliente
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.Size = new System.Drawing.Size(414, 153);
             this.dgvClientes.TabIndex = 22;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(256, 420);
+            this.btnCancelar.Location = new System.Drawing.Point(351, 420);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 21;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(116, 420);
+            this.btnGuardar.Location = new System.Drawing.Point(108, 420);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 20;
@@ -98,6 +102,37 @@ namespace Formulario_Cliente
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Clientes";
+            // 
+            // seleccionFecha
+            // 
+            this.seleccionFecha.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.seleccionFecha.Location = new System.Drawing.Point(104, 136);
+            this.seleccionFecha.Name = "seleccionFecha";
+            this.seleccionFecha.Size = new System.Drawing.Size(214, 20);
+            this.seleccionFecha.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Fecha Creacion:";
+            // 
+            // txtEntidad
+            // 
+            this.txtEntidad.FormattingEnabled = true;
+            this.txtEntidad.Items.AddRange(new object[] {
+            "Banco Popular",
+            "Banco BHD Leon",
+            "Banco APAP",
+            "Banco del Reservas",
+            "Banco Scotiabank"});
+            this.txtEntidad.Location = new System.Drawing.Point(106, 27);
+            this.txtEntidad.Name = "txtEntidad";
+            this.txtEntidad.Size = new System.Drawing.Size(212, 21);
+            this.txtEntidad.TabIndex = 18;
             // 
             // txtCliente
             // 
@@ -136,9 +171,9 @@ namespace Formulario_Cliente
             this.lblCuenta.AutoSize = true;
             this.lblCuenta.Location = new System.Drawing.Point(6, 105);
             this.lblCuenta.Name = "lblCuenta";
-            this.lblCuenta.Size = new System.Drawing.Size(69, 13);
+            this.lblCuenta.Size = new System.Drawing.Size(96, 13);
             this.lblCuenta.TabIndex = 8;
-            this.lblCuenta.Text = "# de Cuenta:";
+            this.lblCuenta.Text = "Numero de Cuenta";
             // 
             // groupBox1
             // 
@@ -221,42 +256,33 @@ namespace Formulario_Cliente
             this.lblNombres.TabIndex = 8;
             this.lblNombres.Text = "Nombres:";
             // 
-            // txtEntidad
+            // btnEliminar
             // 
-            this.txtEntidad.FormattingEnabled = true;
-            this.txtEntidad.Items.AddRange(new object[] {
-            "Banco Popular",
-            "Banco BHD Leon",
-            "Banco APAP",
-            "Banco del Reservas",
-            "Banco Scotiabank"});
-            this.txtEntidad.Location = new System.Drawing.Point(106, 27);
-            this.txtEntidad.Name = "txtEntidad";
-            this.txtEntidad.Size = new System.Drawing.Size(212, 21);
-            this.txtEntidad.TabIndex = 18;
+            this.btnEliminar.Location = new System.Drawing.Point(270, 420);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // label1
+            // btnLimpiar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 143);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Fecha Creacion:";
-            // 
-            // seleccionFecha
-            // 
-            this.seleccionFecha.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.seleccionFecha.Location = new System.Drawing.Point(104, 136);
-            this.seleccionFecha.Name = "seleccionFecha";
-            this.seleccionFecha.Size = new System.Drawing.Size(214, 20);
-            this.seleccionFecha.TabIndex = 21;
+            this.btnLimpiar.Location = new System.Drawing.Point(189, 420);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 24;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 657);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
@@ -296,6 +322,8 @@ namespace Formulario_Cliente
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox txtEntidad;
         private System.Windows.Forms.DateTimePicker seleccionFecha;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 

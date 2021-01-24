@@ -11,7 +11,6 @@ namespace CourseManagment.Domain.BL
         {
             this.profesors = new List<Profesor>();
         }
-
         void IBaseEntity<Profesor>.Actualizar(Profesor entity)
         {
             throw new System.NotImplementedException();

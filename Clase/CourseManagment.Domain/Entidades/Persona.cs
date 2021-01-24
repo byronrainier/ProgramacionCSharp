@@ -16,10 +16,10 @@ namespace CourseManagment.Domain.Entidades
             get { return this._nombre; }
             set
             {
-                if (string.IsNullOrEmpty(this._nombre))
-                    throw new Exception("El nombre es obligatorio !");
+                if (string.IsNullOrEmpty(value))
+                     throw new Exception("El nombre es obligatorio !");
 
-                 if (this._nombre.Length > 50)
+                 if (value.Length > 50)
                     throw new PersonaException("El nombre no puede tener mas de 50 caracteres....");
 
                     this._nombre = value;
