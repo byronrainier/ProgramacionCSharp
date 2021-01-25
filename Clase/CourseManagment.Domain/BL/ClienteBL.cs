@@ -7,12 +7,16 @@ namespace CourseManagment.Domain.BL
 
     public class ClienteBL : IBaseEntity<Cliente>
     {
+        //Lista de tipo Cliente
         private List<Cliente> clientes;
+
+        //Constructor
         public ClienteBL()
         {
             this.clientes = new List<Cliente>();
         }
 
+        //Implementacion de la interfaz generica
         public void Actualizar(Cliente entity)
         {
             throw new System.NotImplementedException();
