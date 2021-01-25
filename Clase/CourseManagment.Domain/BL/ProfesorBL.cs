@@ -4,34 +4,57 @@ using System.Collections.Generic;
 
 namespace CourseManagment.Domain.BL
 {
-    public class ProfesorBL : IBaseEntity<Profesor>
+    public class ProfesorBL : IBaseEntity<Profesor>, IProfesor
     {
         private List<Profesor> profesors;
         public ProfesorBL()
         {
             this.profesors = new List<Profesor>();
         }
-        void IBaseEntity<Profesor>.Actualizar(Profesor entity)
+
+        public void Actualizar(Profesor entity)
         {
             throw new System.NotImplementedException();
         }
 
-        void IBaseEntity<Profesor>.Eliminar(Profesor entity)
+        public void Eliminar(Profesor entity)
         {
-            throw new System.NotImplementedException();
+            var profesor = this.ObtenerEntity(entity.ProfesorId);
+            this.profesors.Remove(profesor);
         }
 
-        void IBaseEntity<Profesor>.Guardar(Profesor entity)
+        public void Guardar(Profesor entity)
         {
-            throw new System.NotImplementedException();
+            this.profesors.Add(entity);
+
         }
 
-        Profesor IBaseEntity<Profesor>.ObtenerEntity(int Id)
+        public Profesor ObtenerEntity(int Id)
         {
-            throw new System.NotImplementedException();
+           return  this.profesors.Find(Profesor => Profesor.ProfesorId == Id);
         }
 
-        List<Profesor> IBaseEntity<Profesor>.ObtenerRegistros()
+        public List<Profesor> ObtenerProfesoresPorCarreras(string carrera)
+        {
+            return this.profesors.FindAll(profesor => profesor.Carrera == carrera);
+        }
+
+        public Profesor ObtenerProfesoresPorCodigo(string codigo)
+        {
+            return this.profesors.Find(profesor => profesor.Codigo == codigo);
+        }
+
+        public List<Profesor> ObtenerProfesoresPorDepartamento(string departamento)
+        {
+            return this.profesors.FindAll(Profesor => Profesor.Departamento == departamento);
+        }
+
+        public List<Profesor> ObtenerRegistros()
+        {
+            return this.profesors;
+        }
+
+        List<Profesor> IProfesor.ObtenerProfesoresPorCodigo(string codigo)
         {
             throw new System.NotImplementedException();
         }

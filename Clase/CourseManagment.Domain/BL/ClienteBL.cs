@@ -4,31 +4,39 @@ using System.Collections.Generic;
 
 namespace CourseManagment.Domain.BL
 {
+
     public class ClienteBL : IBaseEntity<Cliente>
     {
-        void IBaseEntity<Cliente>.Actualizar(Cliente entity)
+        private List<Cliente> clientes;
+        public ClienteBL()
+        {
+            this.clientes = new List<Cliente>();
+        }
+
+        public void Actualizar(Cliente entity)
         {
             throw new System.NotImplementedException();
         }
 
-        void IBaseEntity<Cliente>.Eliminar(Cliente entity)
+        public void Eliminar(Cliente entity)
         {
-            throw new System.NotImplementedException();
+            var cliente = this.ObtenerEntity(entity.CodigoCliente);
+            this.clientes.Remove(cliente);
         }
 
-        void IBaseEntity<Cliente>.Guardar(Cliente entity)
+        public void Guardar(Cliente entity)
         {
-            throw new System.NotImplementedException();
+            this.clientes.Add(entity);
         }
 
-        Cliente IBaseEntity<Cliente>.ObtenerEntity(int Id)
+        public Cliente ObtenerEntity(int Id)
         {
-            throw new System.NotImplementedException();
+            return this.clientes.Find(clientes => clientes.CodigoCliente == Id);
         }
 
-        List<Cliente> IBaseEntity<Cliente>.ObtenerRegistros()
+        public List<Cliente> ObtenerRegistros()
         {
-            throw new System.NotImplementedException();
+            return this.clientes;
         }
     }
 }

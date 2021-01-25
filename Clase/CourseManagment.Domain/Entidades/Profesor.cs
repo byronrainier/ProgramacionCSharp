@@ -12,6 +12,7 @@ namespace CourseManagment.Domain.Entidades
         {
             this.Profesors = new List<Profesor>();
         }
+        public int ProfesorId { get; set; }
         public string Codigo { get; set; }
         public string Carrera { get; set; }
         public string Departamento { get; set; }
