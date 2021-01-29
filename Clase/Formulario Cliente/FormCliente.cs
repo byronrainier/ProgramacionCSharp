@@ -85,5 +85,10 @@ namespace Formulario_Cliente
             this.LimpiarCampos();
             this.CargarDatos();
         }
+
+        private void FormCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

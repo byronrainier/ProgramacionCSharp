@@ -290,6 +290,7 @@ namespace Formulario_Cliente
             this.Controls.Add(this.groupBox1);
             this.Name = "FormCliente";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.FormCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
