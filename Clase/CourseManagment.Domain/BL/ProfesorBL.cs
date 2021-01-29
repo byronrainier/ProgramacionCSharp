@@ -49,7 +49,6 @@ namespace CourseManagment.Domain.BL
         {
             return this.profesors.FindAll(profesor => profesor.Departamento == departamento);
         }
-
         public List<Profesor> ObtenerRegistros()
         {
             return this.profesors;

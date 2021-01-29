@@ -1,15 +1,18 @@
 ﻿using System;
 using CourseManagment.Domain.Entidades;
 using System.Windows.Forms;
+using CourseManagment.Domain.BL;
+using CourseManagment.Domain.Interfaces;
 
 namespace Formulario_Cliente
 {
     public partial class FormCliente : Form
     {
-        private Cliente ClienteBL;
+        private ClienteBL clienteBL;
+        private int clienteID;
         public FormCliente()
         {
-            this.ClienteBL = new Cliente();
+            this.clienteBL = new ClienteBL();
             InitializeComponent();
         }
 
@@ -22,12 +25,11 @@ namespace Formulario_Cliente
             newCliente.Direccion = txtDireccion.Text;
             newCliente.Rut = txtRut.Text;
             newCliente.Entidad = txtEntidad.Text;
-            newCliente.CodigoCliente = txtCliente.Text;
             newCliente.NumeroCuenta = txtCuenta.Text;
             newCliente.FechaIngreso = seleccionFecha.Value;
             txtNombres.Focus();
 
-            ClienteBL.AgregarCliente(newCliente);
+            clienteBL.Guardar(newCliente);
 
             CargarDatos();
 
@@ -37,7 +39,7 @@ namespace Formulario_Cliente
 
         private void CargarDatos()
         {
-            dgvClientes.DataSource = ClienteBL.ObtenerClientes().ToArray();
+            dgvClientes.DataSource = clienteBL.ObtenerRegistros().ToArray();
             dgvClientes.Refresh();
         }
 
@@ -72,18 +74,19 @@ namespace Formulario_Cliente
                 txtNombres.Text = gridViewRow.Cells["Nombre"].Value.ToString();
                 txtApellidos.Text = gridViewRow.Cells["Apellido"].Value.ToString();
                 txtEntidad.Text = gridViewRow.Cells["Entidad"].Value.ToString();
-                txtCliente.Text = gridViewRow.Cells["CodigoCliente"].Value.ToString();
                 txtDireccion.Text = gridViewRow.Cells["Direccion"].Value.ToString();
                 txtCuenta.Text = gridViewRow.Cells["NumeroCuenta"].Value.ToString();
+                this.clienteID = Convert.ToInt32(gridViewRow.Cells["CodigoCliente"].Value);
                 txtRut.Text = gridViewRow.Cells["Rut"].Value.ToString();
                 seleccionFecha.Text = gridViewRow.Cells["FechaIngreso"].Value.ToString();
             }
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            this.ClienteBL.EliminarCliente(txtCliente.Text);
-            this.LimpiarCampos();
-            this.CargarDatos();
+            Cliente cliente = this.clienteBL.ObtenerEntity(this.clienteID);
+            this.clienteBL.Eliminar(cliente);
+            LimpiarCampos();
+            CargarDatos();
         }
 
         private void FormCliente_Load(object sender, EventArgs e)

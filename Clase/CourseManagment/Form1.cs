@@ -44,7 +44,7 @@ namespace CourseManagment
         {
             if (string.IsNullOrEmpty(txtMatricula.Text))
             {
-                MessageBox.Show("El codigo del profesor es requerido.", "Eliminar Profesor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("El codigo del estudiante es requerido.", "Eliminar estudiante", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtMatricula.Focus();
                 return;
             }

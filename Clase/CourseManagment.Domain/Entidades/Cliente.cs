@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CourseManagment.Domain.Entidades
 {
@@ -8,15 +7,13 @@ namespace CourseManagment.Domain.Entidades
     {
         #region "Propiedades"
 
-        
-
         private List<Cliente> clientes;
 
         public Cliente()
         {
             this.clientes = new List<Cliente>();
         }
-        public string CodigoCliente { get; set; }
+        public int CodigoCliente { get; set; }
         public string Entidad { get; set; }
         public string  NumeroCuenta{ get; set; }
         public DateTime FechaIngreso { get; set; }
@@ -31,8 +28,7 @@ namespace CourseManagment.Domain.Entidades
         {
             this.clientes.Add(cliente);
         }
-
-        public void EliminarCliente (string codigocliente)
+        public void EliminarCliente (int codigocliente)
         {
             var cliente = this.clientes.Find(cod => cod.CodigoCliente == codigocliente);
 

@@ -1,51 +1,29 @@
-﻿using CourseManagment.Domain.Interfaces;
-using CourseManagment.Domain.Entidades;
+﻿using CourseManagment.Domain.Entidades;
+using CourseManagment.Domain.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
+using CourseManagment.Domain.BL;
 
 namespace CourseManagment.Domain.BL
 {
 
-    public class ClienteBL : IBaseEntity<Cliente>
+    public class ClienteBL : BaseBL<Cliente>, ICliente
     {
-        //Lista de tipo Cliente
-        private List<Cliente> clientes;
-
-        //Constructor
-        public ClienteBL()
+        public Cliente ObtenerClientePorCuenta(string cuenta)
         {
-            this.clientes = new List<Cliente>();
-        }
-
-        //Implementacion de la interfaz generica
-        public void Actualizar(Cliente entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Eliminar(Cliente entity)
-        {
-            var cliente = this.ObtenerEntity(entity.CodigoCliente);
-            this.clientes.Remove(cliente);
-        }
-
-        public void Guardar(Cliente entity)
-        {
-            this.clientes.Add(entity);
-        }
-
-        public Cliente ObtenerEntity(string Id)
-        {
-            return this.clientes.Find(clientes => clientes.CodigoCliente == Id);
+            return base.Entities.SingleOrDefault(Cliente => Cliente.NumeroCuenta == cuenta);
         }
 
         public Cliente ObtenerEntity(int Id)
         {
-            throw new System.NotImplementedException();
+            return base.Entities.Find(Cliente => Cliente.CodigoCliente == Id);
         }
 
-        public List<Cliente> ObtenerRegistros()
+        public override void Guardar(Cliente entity)
         {
-            return this.clientes;
+            entity.CodigoCliente = base.Entities.Count == 0 ? 1 : base.Entities.Max(Cliente => Cliente.CodigoCliente) + 1;
+            base.Guardar(entity);
         }
+
     }
 }
