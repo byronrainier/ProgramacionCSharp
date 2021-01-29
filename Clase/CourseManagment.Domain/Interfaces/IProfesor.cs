@@ -3,10 +3,8 @@ using CourseManagment.Domain.Entidades;
 
  namespace CourseManagment.Domain.Interfaces
 {
-    public interface IProfesor
+    public interface IProfesor : IBaseEntity<Profesor>, IBusquedaDepartamentoCarrera<Profesor>
     {
-        List<Profesor> ObtenerProfesoresPorDepartamento(string departamento);
-        List<Profesor> ObtenerProfesoresPorCarreras(string carrera);
-        List<Profesor> ObtenerProfesoresPorCodigo(string codigo);
+        Profesor ObtenerProfesoresPorCodigo(string codigo);
     }
 }

@@ -7,7 +7,12 @@ namespace Clase
         static void Main(string[] args)
         {
             //ObtenerDatosCuenta();
-            ObtenerDatosPersonas();
+            //ObtenerDatosPersonas();
+
+
+
+
+
             Console.ReadLine();
         }
         static void ObtenerDatosCuenta()

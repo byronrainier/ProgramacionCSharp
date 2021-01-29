@@ -1,10 +1,11 @@
 ﻿using CourseManagment.Domain.Interfaces;
 using CourseManagment.Domain.Entidades;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CourseManagment.Domain.BL
 {
-    public class ProfesorBL : IBaseEntity<Profesor>, IProfesor
+    public class ProfesorBL :  IProfesor
     {
         private List<Profesor> profesors;
         public ProfesorBL()
@@ -19,22 +20,22 @@ namespace CourseManagment.Domain.BL
 
         public void Eliminar(Profesor entity)
         {
-            var profesor = this.ObtenerEntity(entity.ProfesorId);
-            this.profesors.Remove(profesor);
+            this.profesors.Remove(entity);
         }
 
         public void Guardar(Profesor entity)
         {
-            this.profesors.Add(entity);
+            entity.ProfesorId = this.profesors.Count == 0 ? 1 : this.profesors.Max(profesor => profesor.ProfesorId) + 1;
 
+            this.profesors.Add(entity);
         }
 
         public Profesor ObtenerEntity(int Id)
         {
-           return  this.profesors.Find(Profesor => Profesor.ProfesorId == Id);
+            return this.profesors.Find(profesor => profesor.ProfesorId == Id);
         }
 
-        public List<Profesor> ObtenerProfesoresPorCarreras(string carrera)
+        public List<Profesor> ObtenerProfesoresPorCarrera(string carrera)
         {
             return this.profesors.FindAll(profesor => profesor.Carrera == carrera);
         }
@@ -46,17 +47,16 @@ namespace CourseManagment.Domain.BL
 
         public List<Profesor> ObtenerProfesoresPorDepartamento(string departamento)
         {
-            return this.profesors.FindAll(Profesor => Profesor.Departamento == departamento);
+            return this.profesors.FindAll(profesor => profesor.Departamento == departamento);
         }
 
         public List<Profesor> ObtenerRegistros()
         {
             return this.profesors;
         }
-
-        List<Profesor> IProfesor.ObtenerProfesoresPorCodigo(string codigo)
+        public string PublicarNota()
         {
-            throw new System.NotImplementedException();
+            return "Publique la nota";
         }
     }
 }

@@ -1,15 +1,17 @@
 ﻿using System;
 using CourseManagment.Domain.Entidades;
 using System.Windows.Forms;
+using CourseManagment.Domain.Interfaces;
+using CourseManagment.Domain.BL;
 
 namespace Formularios
 {
     public partial class FormProfesor : Form
     {
-        private Profesor profesorBL; 
+        private IProfesor profesorBL; 
         public FormProfesor()
         {
-            this.profesorBL = new Profesor();
+            this.profesorBL = new ProfesorBL();
             InitializeComponent();
         }
 
@@ -32,7 +34,8 @@ namespace Formularios
             newProfesor.Codigo = txtCodigo.Text;
             txtNombres.Focus();
 
-            profesorBL.AgregarProfesor(newProfesor);
+
+            profesorBL.Guardar(newProfesor);
 
             CargarDatos();
 
@@ -41,7 +44,7 @@ namespace Formularios
         }
         private void CargarDatos()
         {
-            dgvProfesores.DataSource = profesorBL.ObtenerProfesores().ToArray();
+            dgvProfesores.DataSource = profesorBL.ObtenerRegistros().ToArray();
             dgvProfesores.Refresh();
         }
 
@@ -65,8 +68,23 @@ namespace Formularios
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            this.profesorBL.EliminarProfesor(txtCodigo.Text);
+            if (string.IsNullOrEmpty(txtCodigo.Text))
+            {
+                MessageBox.Show("El codigo del profesor es requerido.", "Eliminar Profesor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCodigo.Focus();
+                return;
+            }
+
+            Profesor profesor = this.profesorBL.ObtenerProfesoresPorCodigo(txtCodigo.Text);
+
+            this.profesorBL.Eliminar(profesor);
+
+            LimpiarCampos();
             CargarDatos();
+
+            MessageBox.Show("Profesor Eliminado", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
         }
 
         private void dgvProfesores_CellClick(object sender, DataGridViewCellEventArgs e)
