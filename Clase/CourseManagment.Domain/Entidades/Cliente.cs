@@ -16,7 +16,7 @@ namespace CourseManagment.Domain.Entidades
         {
             this.clientes = new List<Cliente>();
         }
-        public int CodigoCliente { get; set; }
+        public string CodigoCliente { get; set; }
         public string Entidad { get; set; }
         public string  NumeroCuenta{ get; set; }
         public DateTime FechaIngreso { get; set; }
