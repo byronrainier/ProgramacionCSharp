@@ -6,7 +6,7 @@ using CourseManagment.Domain.Entidades;
 
 namespace CourseManagment.Domain.BL
 {
-    public class EstudianteBL : IBaseEntity<Estudiante>, IEstudiante
+    public class EstudianteBL :  IEstudiante
     {
         //Creacion de la lista tipo estudiantes.
         private List<Estudiante> estudiantes;
@@ -56,9 +56,9 @@ namespace CourseManagment.Domain.BL
             return this.estudiantes.FindAll(estudiantes => estudiantes.Departamento == departamento);
         }
 
-        public List<Estudiante> ObtenerEstudiantesPorMatricula(int matricula)
+        public Estudiante ObtenerEstudiantesPorMatricula(string matricula)
         {
-            throw new NotImplementedException();
+            return this.estudiantes.Find(estudiantes => estudiantes.Matricula == matricula);
         }
 
         public List<Estudiante> ObtenerRegistros()

@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using CourseManagment.Domain.Entidades;
+using CourseManagment.Domain.BL;
+using CourseManagment.Domain.Interfaces;
 
 namespace CourseManagment
 {
     public partial class formEstudiante : Form
     {
-        private Estudiante estudianteBL;
+        private IEstudiante estudianteBL;
         public formEstudiante()
         {
-            this.estudianteBL = new Estudiante();
+            this.estudianteBL = new EstudianteBL();
             InitializeComponent();
         }
         private void formEstudiante_Load(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace CourseManagment
                 newEstudiante.Rut = txtRut.Text;
                 lblNotificacion.Text = "Estudiante agregado exitosamente.";
 
-                estudianteBL.AgregarEstudiante(newEstudiante);
+                estudianteBL.Guardar(newEstudiante);
 
                 CargarEstudiantes();
 
@@ -40,14 +42,26 @@ namespace CourseManagment
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            this.estudianteBL.EliminarEstudiante(txtMatricula.Text);
-            this.LimpiarCampos();
-            this.CargarEstudiantes();
-            lblNotificacion.Text = "Estudiante Eliminado";
+            if (string.IsNullOrEmpty(txtMatricula.Text))
+            {
+                MessageBox.Show("El codigo del profesor es requerido.", "Eliminar Profesor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMatricula.Focus();
+                return;
+            }
+
+            Estudiante estudiante= this.estudianteBL.ObtenerEstudiantesPorMatricula(txtMatricula.Text);
+
+            this.estudianteBL.Eliminar(estudiante);
+
+            LimpiarCampos();
+            CargarEstudiantes();
+
+            MessageBox.Show("Profesor Eliminado", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
         private void CargarEstudiantes()
         {
-            dgvEstudiantes.DataSource = estudianteBL.ObtenerEstudiantes().ToArray();
+            dgvEstudiantes.DataSource = estudianteBL.ObtenerRegistros().ToArray();
             dgvEstudiantes.Refresh();
 
         }

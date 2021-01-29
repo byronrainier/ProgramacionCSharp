@@ -3,12 +3,9 @@ using CourseManagment.Domain.Entidades;
 
 namespace CourseManagment.Domain.Interfaces
 {
-   public  interface IEstudiante
+   public  interface IEstudiante : IBaseEntity<Estudiante>, IBusquedaDepartamentoCarreraEstudiante<Estudiante>
     {
         //Interfaz propia de tipo estudiante
-        List<Estudiante> ObtenerEstudiantesPorCarrera(string carrera);
-        List<Estudiante> ObtenerEstudiantesPorMatricula(int matricula);
-        List<Estudiante> ObtenerEstudiantesPorDepartamento(string departamento);
-
+        Estudiante ObtenerEstudiantesPorMatricula(string matricula);
     }
 }
