@@ -33,9 +33,14 @@ namespace CourseManagment.Domain.BL
             this.clientes.Add(entity);
         }
 
-        public Cliente ObtenerEntity(int Id)
+        public Cliente ObtenerEntity(string Id)
         {
             return this.clientes.Find(clientes => clientes.CodigoCliente == Id);
+        }
+
+        public Cliente ObtenerEntity(int Id)
+        {
+            throw new System.NotImplementedException();
         }
 
         public List<Cliente> ObtenerRegistros()
