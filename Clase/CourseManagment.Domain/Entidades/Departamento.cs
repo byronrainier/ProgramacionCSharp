@@ -6,9 +6,9 @@
 
         
 
-        private int departamentoID;
+        private string departamentoID;
 
-        public int DepartamentoID
+        public string DepartamentoID
         {
             get { return departamentoID; }
             set { departamentoID = value; }
