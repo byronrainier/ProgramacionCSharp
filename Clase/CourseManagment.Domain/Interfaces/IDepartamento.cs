@@ -1,8 +1,8 @@
-﻿
+﻿using CourseManagment.Domain.Entidades;
 
 namespace CourseManagment.Domain.Interfaces
 {
-    public interface IDepartamento
+    public interface IDepartamento : IBaseEntity<Departamento>
     {
     }
 }
