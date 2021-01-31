@@ -22,9 +22,9 @@
             set { nombreDep = value; }
         }
 
-        private int presupuesto;
+        private double presupuesto;
 
-        public int Presupuesto
+        public double Presupuesto
         {
             get { return presupuesto; }
             set { presupuesto = value; }
