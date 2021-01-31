@@ -4,9 +4,9 @@
     {
         #region "Propiedades"
 
-        private int cursoID;
+        private string cursoID;
 
-        public int CursoID
+        public string CursoID
         {
             get { return cursoID; }
             set { cursoID = value; }
