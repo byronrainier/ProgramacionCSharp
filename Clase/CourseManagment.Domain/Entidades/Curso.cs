@@ -4,9 +4,9 @@
     {
         #region "Propiedades"
 
-        private int cursoID;
+        private string cursoID;
 
-        public int CursoID
+        public string CursoID
         {
             get { return cursoID; }
             set { cursoID = value; }
@@ -28,9 +28,9 @@
             set { credito = value; }
         }
 
-        private int departamentoID;
+        private string departamentoID;
 
-        public int DepartamentoID
+        public string DepartamentoID
         {
             get { return departamentoID; }
             set { departamentoID = value; }

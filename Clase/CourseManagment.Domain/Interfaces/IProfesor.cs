@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using CourseManagment.Domain.Entidades;
+﻿using CourseManagment.Domain.Entidades;
 
- namespace CourseManagment.Domain.Interfaces
+namespace CourseManagment.Domain.Interfaces
 {
     public interface IProfesor : IBaseEntity<Profesor>, IBusquedaDepartamentoCarrera<Profesor>
     {

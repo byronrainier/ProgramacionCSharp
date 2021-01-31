@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using CourseManagment.Domain.Entidades;
 
 namespace CourseManagment.Domain.Interfaces
