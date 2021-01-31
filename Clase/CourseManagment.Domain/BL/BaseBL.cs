@@ -27,5 +27,6 @@ namespace CourseManagment.Domain.BL
         {
             return this.entities;
         }
+
     }
 }
