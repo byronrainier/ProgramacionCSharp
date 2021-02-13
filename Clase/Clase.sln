@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario Profesor", "Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario Cliente", "Formulario Cliente\Formulario Cliente.csproj", "{B874E98D-D0C3-4EC3-866E-C2156896C8B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionWeb", "AplicacionWeb\AplicacionWeb.csproj", "{246B29B7-7672-4EB9-A017-B7C862198A6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B874E98D-D0C3-4EC3-866E-C2156896C8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B874E98D-D0C3-4EC3-866E-C2156896C8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B874E98D-D0C3-4EC3-866E-C2156896C8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246B29B7-7672-4EB9-A017-B7C862198A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246B29B7-7672-4EB9-A017-B7C862198A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246B29B7-7672-4EB9-A017-B7C862198A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246B29B7-7672-4EB9-A017-B7C862198A6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
