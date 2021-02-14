@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CourseAdmModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CourseAdmModelStoreContainer">
+    <EntitySet Name="Departaments" EntityType="CourseAdmModel.Store.Departaments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Courses" EntityType="CourseAdmModel.Store.Courses" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="DepartamentCourse" Association="CourseAdmModel.Store.DepartamentCourse">
+      <End Role="Departament" EntitySet="Departaments" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Departaments">
+    <Key>
+      <PropertyRef Name="DepartamentId" />
+    </Key>
+    <Property Name="DepartamentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Budget" Type="decimal" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="Administrator" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Courses">
+    <Key>
+      <PropertyRef Name="CourseId" />
+    </Key>
+    <Property Name="CourseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Credits" Type="smallint" Nullable="false" />
+    <Property Name="DepartamentDepartamentId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="DepartamentCourse">
+    <End Role="Departament" Type="CourseAdmModel.Store.Departaments" Multiplicity="1" />
+    <End Role="Course" Type="CourseAdmModel.Store.Courses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departament">
+        <PropertyRef Name="DepartamentId" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="DepartamentDepartamentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CourseAdmModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="CourseAdmModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departaments" EntityType="CourseAdmModel.Departament" />
+          <EntitySet Name="Courses" EntityType="CourseAdmModel.Course" />
+          <AssociationSet Name="DepartamentCourse" Association="CourseAdmModel.DepartamentCourse">
+            <End Role="Departament" EntitySet="Departaments" />
+            <End Role="Course" EntitySet="Courses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Departament">
+          <Key>
+            <PropertyRef Name="DepartamentId" />
+          </Key>
+          <Property Name="DepartamentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Budget" Type="Decimal" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="Administrator" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="Courses" Relationship="CourseAdmModel.DepartamentCourse" FromRole="Departament" ToRole="Course" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseId" />
+          </Key>
+          <Property Name="CourseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Credits" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Departament" Relationship="CourseAdmModel.DepartamentCourse" FromRole="Course" ToRole="Departament" />
+          <Property Name="DepartamentDepartamentId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="DepartamentCourse">
+          <End Type="CourseAdmModel.Departament" Role="Departament" Multiplicity="1" />
+          <End Type="CourseAdmModel.Course" Role="Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departament">
+              <PropertyRef Name="DepartamentId" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="DepartamentDepartamentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CourseAdmModelStoreContainer" CdmEntityContainer="CourseAdmModelContainer">
+    <EntitySetMapping Name="Departaments">
+      <EntityTypeMapping TypeName="IsTypeOf(CourseAdmModel.Departament)">
+        <MappingFragment StoreEntitySet="Departaments">
+          <ScalarProperty Name="DepartamentId" ColumnName="DepartamentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Budget" ColumnName="Budget" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Administrator" ColumnName="Administrator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="IsTypeOf(CourseAdmModel.Course)">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Credits" ColumnName="Credits" />
+          <ScalarProperty Name="DepartamentDepartamentId" ColumnName="DepartamentDepartamentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
